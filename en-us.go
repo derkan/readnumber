@@ -71,7 +71,7 @@ func IntegerToEnUs(input int) string {
 			break
 		default:
 			if units > 0 {
-				word := fmt.Sprintf("%s-%s", englishTens[tens], englishUnits[units])
+				word := fmt.Sprintf("%s %s", englishTens[tens], englishUnits[units])
 				words = append(words, word)
 			} else {
 				words = append(words, englishTens[tens])
